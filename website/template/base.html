@@ -28,16 +28,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="btn btn-outline-light" style="border-color: green;" aria-current="page" href="#">Home</a>
+          <a class="btn btn-outline-light" style="border-color: green;" aria-current="page" href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-light" style="border-color: green;" href="#">Events</a>
+          <a class="btn btn-outline-light" style="border-color: green;" href="{% url 'events' %}">Events</a>
+        </li>
+        <li class="nav-item"> 
+          <a class="btn btn-outline-light" style="border-color: green;" href="{% url 'about' %}">About</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-light" style="border-color: green;" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-outline-light" style="border-color: green;" >Contact</a>
+          <a class="btn btn-outline-light" style="border-color: green;"  href="{% url 'contact' %}" >Contact</a>
         </li>
       </ul>
     </div>
